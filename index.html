@@ -698,13 +698,9 @@ padding-top:50px;
 gap:32px;
 }
 
-.hero-right{
-order:-1; /* visual first on mobile, copy follows */
-}
-
 .logo-wrapper{
-width:100%;
-max-width:380px;
+width:78%;
+max-width:280px;
 height:auto;
 aspect-ratio:340/420;
 margin:0 auto;
@@ -713,58 +709,59 @@ margin:0 auto;
 .scan-frame{
 width:100%;
 height:100%;
-max-width:340px;
+max-width:280px;
 margin:auto;
 }
 
 .m-logo-img{
-width:78%;
-height:78%;
+width:72%;
+height:72%;
 }
 
-/* Card becomes a HUD overlay pinned to the bottom-right
-   of the scan frame itself, like a real-time readout,
-   instead of a separate card below the image. */
+/* Card becomes a small HUD badge pinned to the bottom-right
+   CORNER of the scan frame, overlapping the face slightly,
+   like a real-time readout — not a block that eats half the frame. */
 .analysis-card{
 position:absolute;
-right:4%;
-bottom:4%;
+right:-6%;
+bottom:6%;
 left:auto;
 top:auto;
 width:auto;
-min-width:150px;
-max-width:62%;
-padding:14px;
-border-radius:18px;
+min-width:0;
+max-width:46%;
+padding:10px;
+border-radius:14px;
 }
 
 .score-number{
-font-size:38px;
+font-size:24px;
 }
 
 .score{
-margin-bottom:12px;
+margin-bottom:8px;
 }
 
 .score-label{
-font-size:11px;
+font-size:9px;
 }
 
 .metrics{
-gap:6px;
+gap:5px;
 }
 
 .metric{
-padding:8px;
+padding:6px;
+border-radius:10px;
 }
 
 .metric small{
-font-size:9.5px;
-margin-bottom:3px;
+font-size:8px;
+margin-bottom:2px;
 }
 
 .metric strong{
-font-size:13px;
+font-size:11px;
 }
 
 .social-proof{
@@ -775,28 +772,40 @@ justify-content:center;
 
 @media(max-width:480px){
 
+.logo-wrapper{
+max-width:230px;
+}
+
 .scan-frame{
-max-width:280px;
+max-width:230px;
 }
 
 .analysis-card{
-max-width:68%;
-padding:10px;
-border-radius:14px;
-right:2%;
-bottom:2%;
+max-width:50%;
+padding:8px;
+border-radius:12px;
+right:-8%;
+bottom:6%;
 }
 
 .score-number{
-font-size:30px;
+font-size:20px;
+}
+
+.score-label{
+font-size:8px;
+}
+
+.metric{
+padding:5px;
 }
 
 .metric strong{
-font-size:11.5px;
+font-size:9.5px;
 }
 
 .metric small{
-font-size:8.5px;
+font-size:7px;
 }
 
 }
@@ -1194,5 +1203,3 @@ submitBtn.textContent = "Reserve My Spot";
 
 </body>
 </html>
-
-
