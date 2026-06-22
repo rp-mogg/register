@@ -394,6 +394,15 @@ margin-bottom:50px;
 text-align:center;
 }
 
+.section-sub{
+text-align:center;
+color:#999;
+max-width:560px;
+margin:-26px auto 50px;
+font-size:1rem;
+line-height:1.7;
+}
+
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -406,11 +415,32 @@ border-radius:24px;
 background:rgba(255,255,255,.03);
 border:1px solid rgba(255,255,255,.08);
 transition:transform .2s ease, border-color .2s ease;
+position:relative;
 }
 
 .feature-card:hover{
 transform:translateY(-4px);
 border-color:rgba(255,255,255,.2);
+}
+
+.feature-card.highlight{
+border-color:rgba(0,255,140,.3);
+background:linear-gradient(180deg,rgba(0,255,140,.06),rgba(255,255,255,.03));
+}
+
+.feature-tag{
+position:absolute;
+top:20px;
+right:20px;
+font-size:10.5px;
+font-weight:800;
+letter-spacing:.04em;
+text-transform:uppercase;
+color:#00ff8c;
+background:rgba(0,255,140,.1);
+border:1px solid rgba(0,255,140,.3);
+padding:4px 10px;
+border-radius:999px;
 }
 
 .feature-icon{
@@ -768,6 +798,11 @@ font-size:11px;
 justify-content:center;
 }
 
+.section-sub{
+margin-top:-16px;
+padding:0 10px;
+}
+
 }
 
 @media(max-width:480px){
@@ -832,7 +867,7 @@ pointer-events:auto;
 </div>
 
 <div class="nav-right">
-moggg.tech &nbsp;·&nbsp; Face · Skin · Frame
+moggg.tech &nbsp;·&nbsp; Face · Skin · Frame · Diet
 </div>
 
 </nav>
@@ -853,8 +888,8 @@ moggged?
 </h1>
 
 <p class="subtitle">
-A clinical-style read on your face.
-Get a detailed breakdown of your skin condition, facial symmetry, proportions, and bone structure — with the kind of specific, personalized advice you'd expect from an in-person consult, available anytime from your phone.
+A clinical-style read on your face, skin, and physique.
+Get a detailed breakdown of your skin condition, facial symmetry, proportions, bone structure, and body frame — plus AI meal guidance built around what your scans say you actually need. The kind of specific, personalized plan you'd expect from an in-person consult, available anytime from your phone.
 </p>
 
 <div class="social-proof">
@@ -940,6 +975,10 @@ Join Waitlist →
 What you get assessed
 </h2>
 
+<p class="section-sub">
+Four pillars, one continuous picture — face, skin, body, and what you eat to actually move the numbers.
+</p>
+
 <div class="grid">
 
 <div class="feature-card">
@@ -974,9 +1013,26 @@ A read on texture, tone, hydration, and visible concerns, with specific next ste
 <path d="M9 10l2 2 4-4"/>
 </svg>
 </div>
-<h3>Bone Structure & Frame</h3>
+<h3>Bone Structure & Body Frame</h3>
 <p>
-Jawline, neck angle, and posture assessed together, since they're rarely the real issue on their own.
+Jawline, neck angle, and posture assessed alongside shoulder width, taper, and overall build — your full frame, not just your face.
+</p>
+</div>
+
+<div class="feature-card highlight">
+<div class="feature-tag">New</div>
+<div class="feature-icon">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00ff8c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+<path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+<line x1="6" y1="1" x2="6" y2="4"/>
+<line x1="10" y1="1" x2="10" y2="4"/>
+<line x1="14" y1="1" x2="14" y2="4"/>
+</svg>
+</div>
+<h3>AI Diet & Nutrition</h3>
+<p>
+Meal guidance built from your actual scans — skin needs, face goals, and body frame or bodybuilding targets, combined into one plan instead of three contradicting apps.
 </p>
 </div>
 
@@ -989,7 +1045,7 @@ Jawline, neck angle, and posture assessed together, since they're rarely the rea
 </div>
 <h3>Follow-Up Tracking</h3>
 <p>
-Re-scan over time to see what's actually changing, the way a dermatologist would track a treatment plan.
+Re-scan over time to see what's actually changing, the way a dermatologist or coach would track a treatment or training plan.
 </p>
 </div>
 
@@ -1090,7 +1146,7 @@ Something went wrong. Please try again.
 </div>
 
 <div class="footer-tagline">
-AI that tells the truth about your face. Face, skin, and frame analysis — built for honest self-improvement.
+AI that tells the truth about your face, skin, and frame — built for honest self-improvement, inside and out.
 </div>
 
 </div>
@@ -1103,6 +1159,7 @@ AI that tells the truth about your face. Face, skin, and frame analysis — buil
 <a href="#">Face Analysis</a>
 <a href="#">Skin Analysis</a>
 <a href="#">Frame Analysis</a>
+<a href="#">Diet & Nutrition</a>
 </div>
 
 <!-- <div class="footer-col">
